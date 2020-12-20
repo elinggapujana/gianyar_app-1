@@ -21,15 +21,15 @@ services:
     ports:
       - 8080:8080
 
-  # app:
-  #   image: myid/gianyar_app
-  #   container_name: app
-  #   links:
-  #     - db
-  #   environment:
-  #     MYSQL_DATABASE: app_db
-  #     MYSQL_USER: db_user
-  #     MYSQL_PASSWORD: db_user_pass
-  #   restart: always
-  #   ports:
-  #     - 8081:80
+  app:
+    image: myid/gianyar_app
+    container_name: app
+    links:
+      - db
+    environment:
+      MYSQL_DATABASE: app_db
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: db_user_pass
+    restart: always
+    ports:
+      - 8081:80

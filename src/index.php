@@ -1,4 +1,15 @@
 <?php
 
 echo "Hello World";
-s
+
+
+{
+  "data": [
+    {
+      "nama": "Sembako Bupati",
+      "Total": 12345
+    },
+    ....dst
+  ]
+}
+
