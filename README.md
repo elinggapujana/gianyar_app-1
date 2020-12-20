@@ -22,3 +22,6 @@ atau dapat juga dengan menggunakan perintah berikut
 docker-compose up -d
 ```
 untuk menjalankannya sebagai service. dan untuk mematikan database server menggunakan perintah yang sama `docker-compose down`
+
+Jika pada komputer anda sudah memiliki database server mysql berjalan di port `3306`, ubah file `docker-compose.yml` bagian port 
+dengan port lainnya, semisal: `3308:3306`, agar tidak bentrok.
